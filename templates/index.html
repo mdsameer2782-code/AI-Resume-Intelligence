@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Intelligence Platform</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <div class="header">
+    <h1>🤖 AI Resume Intelligence Platform</h1>
+    <button id="themeToggle">🌙 Dark Mode</button>
+</div>
+
+        <div class="upload-box">
+
+            <label><b>Upload Resume (PDF)</b></label><br>
+            <input
+                type="file"
+                id="resumeFile"
+                accept=".pdf"><br><br>
+
+            <label><b>Upload Job Description (PDF)</b></label><br>
+            <input
+                type="file"
+                id="jobFile"
+                accept=".pdf"><br><br>
+
+            <button onclick="analyze()">
+                Analyze Resume
+            </button>
+
+        </div>
+
+        <br>
+        <div id="progressContainer" style="display:none;">
+            <div id="progressBar"></div>
+        </div>
+
+        <div id="progressText"style="display:none;"></div>
+        <div id="result"></div>
+        <div class="action-buttons">
+
+    <a href="/download-report" target="_blank">
+        <button id="downloadReport">
+            📄 Download ATS Report
+        </button>
+    </a>
+
+</div>
+
+    </div>
+
+</div>
+<footer class="footer">
+    <hr>
+    <p>
+        🚀 AI Resume Intelligence Platform
+    </p>
+
+    <p>
+        Developed by Mohammad Sameer
+    </p>
+</footer>
+
+<script src="/static/script.js"></script>
+
+</body>
+
+</html>
